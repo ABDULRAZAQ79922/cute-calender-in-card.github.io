@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.cuteCard {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cuteCalendar {
+    padding: 16px;
+}
+
+.cuteMonth h2 {
+    font-size: 2em;
+    color: #ff6b6b;
+    margin: 0;
+}
+
+.cuteDays {
+    margin-top: 20px;
+}
+
+.cuteWeekdays, .cuteDates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.cuteWeekdays div, .cuteDates div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 2px;
+    font-size: 1em;
+}
+
+.cuteWeekdays div {
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cuteDates div {
+    background: #ffe4e1;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cuteDates div:hover {
+    background: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
